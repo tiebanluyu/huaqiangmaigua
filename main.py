@@ -38,20 +38,22 @@ text="""
 
 
 """
-
+x=-300
+y=250
+t.title("华强买瓜")
 t.bgpic("00.png")
 t.update()
-t.goto(-210,170)
+t.goto(x,y)
 t.penup()
 t.hideturtle()
 for i in range(len(text)):
     print(text[i],end="",flush=True)
     #print(i)
-    t.write(text[i],move=True,font=("宋体",18,"normal"))
+    t.write(text[i],move=True,font=("宋体",30,"normal"))
     if text[i]=="\n":
         
         t.clear()
-        t.goto(-210,170)
+        t.goto(x,y)
 
     if i==6:
         t.bgpic("01.png")
